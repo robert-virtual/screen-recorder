@@ -101,6 +101,10 @@ detener.addEventListener("click", () => {
   //   grabar.classList.remove("d-none");
   detener.classList.add("d-none");
   savePanel.classList.remove("d-none");
+  scrollTo({
+    top: document.body.scrollHeight,
+    behavior: "smooth",
+  });
 });
 
 guardar.addEventListener("click", () => {
